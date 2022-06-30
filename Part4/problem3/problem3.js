@@ -1,8 +1,8 @@
 function joinArrayRemoveDuplicate(arrayA, arrayB) {
   // Your Code Here
-  let gabung = [...arrayA,...arrayB]; //buat gabungin
-  // let result = gabung[]; //buat hilangin persamaan
-  let result = [...new Set(gabung)]; //buat hilangin persamaan
+  // let gabung = [...arrayA,...arrayB]; //buat gabungin
+  // let result = [...new Set(gabung)]; //buat hilangin persamaan
+  let result = [...new Set([...arrayA, ...arrayB])]; //cara gabungin sekaligus hilangin persamaan
   return result;
 }
 
